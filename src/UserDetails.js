@@ -38,6 +38,8 @@ class UserDetails extends Component {
                     dob:this.dobInput.current.value,
                     placeBirth: this.placeInput.current.value,
                     favShow : this.showInput.current.value
+                }).then(()=>{
+                    this.props.history.push("/");
                 });
             } else {
                 // Some error occured

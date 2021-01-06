@@ -16,7 +16,7 @@ class SignUp extends Component {
         }
         
         // validation constants
-        this.emailPattern = /.+@.+\.+$/;
+        this.emailPattern = /^.+@.+\..+$/;
         this.passwordMinLength = 6;
 
         this.submitSignUp = this.submitSignUp.bind(this);
@@ -32,7 +32,7 @@ class SignUp extends Component {
             .then((user) => {
                 // Signed in 
                 // ...
-                this.props.history.push('/');
+                this.props.history.push('/edit-details');
             })
             .catch((error) => {
                 var errorMessage = error.message;
@@ -107,7 +107,6 @@ class SignIn extends Component {
     }
 
     submitSignIn(){
-        console.log(this.emailInput);
         const email = this.emailInput.current.value;
         const password = this.passwordInput.current.value;
 
@@ -115,7 +114,7 @@ class SignIn extends Component {
         .then((user) => {
             // Signed in 
             // ...
-            this.props.history.push('/');
+            this.props.history.push('/edit-details');
         })
         .catch((error) => {
             var errorMessage = error.message;

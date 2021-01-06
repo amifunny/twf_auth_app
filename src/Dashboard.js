@@ -16,7 +16,6 @@ class Dashboard extends Component {
 
     componentDidMount(){
         firebase.auth().onAuthStateChanged( (user)=> {
-            console.log("Asdjahskd")
             if (user) {
                 db.collection('users').doc(user.uid).get().then((doc) => {
                     this.setState({
