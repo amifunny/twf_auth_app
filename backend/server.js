@@ -1,25 +1,14 @@
 const express = require('express')
 const app = express()
+const path = require('path');
 const port = 3000
 
-var admin = require("firebase-admin");
+app.use(express.static('build'))
 
-var serviceAccount = require("private\firebaseprivatekey.json");
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-});
-
-// app.use(express.static('public'))
-
-app.get('/', (req, res) => {
-  res.send('User Info Here')
-});
-
-app.get('/signup', (req, res) => {
-  res.send('User Info Here')
+app.get('/*', function (req, res) {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`listening at http://localhost:${port}`)
 })
