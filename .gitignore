@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/backend/node_modules
+
 /.pnp
 .pnp.js
 
@@ -10,6 +12,9 @@
 
 # production
 /build
+
+# private keys
+/backend/private
 
 # misc
 .DS_Store

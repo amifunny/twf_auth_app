@@ -1,0 +1,8 @@
+.sign-out-button {
+  background-color: teal;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  margin: 0 1rem;
+  color: white;
+}

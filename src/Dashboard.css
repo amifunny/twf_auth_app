@@ -1,0 +1,30 @@
+.dashboard-nav {
+  background: gray;
+  padding: 0.5rem 4rem;
+}
+
+.edit-button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  margin: 0 1rem;
+}
+
+.detail-show {
+  margin: 2rem auto;
+}
+
+.detail-value {
+  margin: 2rem auto;
+}
+
+label {
+  padding: 0.2rem 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

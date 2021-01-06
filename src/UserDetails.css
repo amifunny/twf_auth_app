@@ -1,0 +1,36 @@
+.dash-button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  margin: 0 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-outer {
+  padding: 2rem;
+}
+
+.detail-field {
+  margin: 2rem auto;
+}
+
+label {
+  padding: 0.2rem 1rem;
+}
+
+input {
+  padding: 0.2rem 1rem;
+}
+
+.save-button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  margin: 0 1rem;
+  background-color: teal;
+}

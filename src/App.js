@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {SignIn,SignUp} from './AuthBox';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Dashboard from './Dashboard';
+import UserDetails from './UserDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          The TWF App
       </header>
+      <Router>
+          <Switch>
+               {/* URL paths react listens to */}
+              <Route exact path='/' component={Dashboard} />
+              <Route path='/edit-details' component={UserDetails} />
+              <Route path='/signup' component={SignUp} />
+              <Route path='/signin' component={SignIn} />
+          </Switch>
+      </Router>
     </div>
   );
 }

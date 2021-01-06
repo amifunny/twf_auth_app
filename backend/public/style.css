@@ -1,0 +1,22 @@
+.container{
+	width: 100%;
+}
+
+.center-flex{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+
+.auth-box-inner{
+	padding: 4rem;
+	margin: 10rem auto;
+	background-color: purple;
+	border-radius: 0.5rem;
+}
+
+.auth-button{
+	display: block;
+	padding: 1rem 4rem;
+	margin: 1rem auto;
+}

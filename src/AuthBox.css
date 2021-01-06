@@ -1,0 +1,32 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box-inner {
+  background-color: teal;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 2rem 4rem;
+}
+
+.auth-input {
+  display: block;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.auth-input-wrong {
+  border: 0.5px solid red;
+}
+
+.auth-button {
+  display: block;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #013f3f;
+  border: none;
+  color: wheat;
+  cursor: pointer;
+}
